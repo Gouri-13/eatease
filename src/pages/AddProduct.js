@@ -6,7 +6,7 @@ import Message from '../components/Message'
 import pizza from '../apis/pizza'
 import { doc, setDoc } from "firebase/firestore"; 
 import { db, firestore } from '../firebase'
-import logo from '../assests/logoEatease.jpg'
+import logo from '../assests/logoEatease.png'
 const AddProduct = () => {
     const [img,setImg]=useState("")
     const [name,setName]=useState("")

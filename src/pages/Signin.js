@@ -5,7 +5,7 @@ import {yupResolver} from '@hookform/resolvers/yup'
 import * as yup from 'yup';
 import {useForm} from 'react-hook-form'
 import { useDispatch, useSelector } from 'react-redux';
-import logo from '../assests/logoEatease.jpg';
+import logo from '../assests/logoEatease.png';
 import Spinner from '../components/Spinner'
 import { siginUser } from '../actions/auth';
 const Signin = () => {

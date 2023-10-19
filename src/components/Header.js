@@ -5,7 +5,7 @@ import {Link, useNavigate} from 'react-router-dom'
 import {useDispatch, useSelector} from 'react-redux'
 import { searchProducts, showSideBar } from '../actions'
 import Spinner from './Spinner'
-import logo from '../assests/logoEatease.jpg'
+import logo from '../assests/logoEatease.png'
 import '../styles/header.css'
 const Header = () => {
     const [name,setName]=useState('')

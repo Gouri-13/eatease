@@ -7,7 +7,7 @@ import {useForm} from 'react-hook-form'
 import { useDispatch, useSelector } from 'react-redux';
 import Spinner from '../components/Spinner'
 import { signupUser } from '../actions/auth';
-import logo from '../assests/logoEatease.jpg';
+import logo from '../assests/logoEatease.png';
 const Signup = () => {
     const [isLoading,setLoading]=useState(false)
     const dispatch =useDispatch();
