@@ -6,8 +6,9 @@ import chaibugs from '../assests/chaibugs.jpg'
 import ravirice from '../assests/ravirice.jpg'
 import national from '../assests/national.jpg'
 import tsec from '../assests/tsec.jpg'
-import pizzaSilce from '../assests/pizzaSilce.png'
+// import pizzaSilce from '../assests/pizzaSilce.png'
 import Product from './products/Product'
+import {Link} from 'react-router-dom'
 import { useSelector } from 'react-redux'
 const MainArea = () => {
     const user = useSelector(state=>state.user)
@@ -23,7 +24,7 @@ const MainArea = () => {
                 <div className="text">
                 <h2>Hello {user?.user?.name}</h2>
                 <p>Get rewards on your<span> FIRST </span>  order</p>
-                <button>Order Now!</button>
+               <Link to="/cart"><button>Order Now!</button></Link> 
                 <img className='full circle' src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Orange_circle_100%25.svg/768px-Orange_circle_100%25.svg.png" alt="" />
                 <img className='small circle' src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Orange_circle_100%25.svg/768px-Orange_circle_100%25.svg.png" alt="" />
                 <img className='smaller circle' src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Orange_circle_100%25.svg/768px-Orange_circle_100%25.svg.png" alt="" />

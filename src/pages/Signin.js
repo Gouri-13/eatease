@@ -5,8 +5,7 @@ import {yupResolver} from '@hookform/resolvers/yup'
 import * as yup from 'yup';
 import {useForm} from 'react-hook-form'
 import { useDispatch, useSelector } from 'react-redux';
-
-
+import logo from '../assests/logoEatease.jpg';
 import Spinner from '../components/Spinner'
 import { siginUser } from '../actions/auth';
 const Signin = () => {
@@ -56,7 +55,7 @@ const Signin = () => {
         <div className='auth'>
             <div className="form">
                 <div className="logo">
-                    <img src="https://cdn-icons-png.flaticon.com/512/4039/4039232.png" alt="" />
+                    <img src={logo} alt="" />
                 </div>
                 {user?.error&&(<div className="err">
                  {user?.error}

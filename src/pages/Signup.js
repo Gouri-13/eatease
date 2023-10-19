@@ -7,6 +7,7 @@ import {useForm} from 'react-hook-form'
 import { useDispatch, useSelector } from 'react-redux';
 import Spinner from '../components/Spinner'
 import { signupUser } from '../actions/auth';
+import logo from '../assests/logoEatease.jpg';
 const Signup = () => {
     const [isLoading,setLoading]=useState(false)
     const dispatch =useDispatch();
@@ -55,7 +56,7 @@ const Signup = () => {
         <div className='auth'>
             <div className="form">
                 <div className="logo">
-                    <img src="https://cdn-icons-png.flaticon.com/512/4039/4039232.png" alt="" />
+                    <img src={logo} alt="" />
                 </div>
                 {user?.error&&(<div className="err">
                  {user?.error}
