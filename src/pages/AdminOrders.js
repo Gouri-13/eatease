@@ -44,7 +44,7 @@ const AdminOrders = () => {
                 </div>
                  <div className="status">
                   <p>Placed on{order?.createdAt} </p>
-                  <span>Your item has been placed.</span>
+                  <span>Order ${order?._id} has been placed.</span>
                  </div>
                </div></Link>
            )):<h1>No Past Orders</h1>

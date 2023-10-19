@@ -24,7 +24,7 @@ const Header = () => {
               <div className="burger" onClick={()=>dispatch(showSideBar(true))}>
                <HiMenuAlt1/>
               </div>
-              <div className='eatease'>
+              <div className='eatease' >
               <Link to="/"><img src={logo} alt="logo" /></Link>
               </div>
               

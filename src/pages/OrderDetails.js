@@ -29,7 +29,7 @@ const OrderDetails = () => {
 <h3>ORDER DETAILS</h3>
 <div className="add-sec-area">
     <h4 style={{margin:'20px 0'}}>Order ID:{_id}</h4>
-    <h4>Shipping</h4>
+    <h4>Details</h4>
       {shippingAddress&&(
           <div  className={`og-add`}>
              <p>{shippingAddress.name}</p>
